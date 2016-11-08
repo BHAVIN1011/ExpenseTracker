@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Expense-taking Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="jquery.mobile-1.4.2.min.css" />
+        <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="jquery.mobile-1.4.2.min.js"></script>
+        <script src="application.js"></script>
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header">
+                <a href="index.html">Home</a>
+                <h1>Expense-taking App</h1>
+                <a href="addnotes.html" data-ajax="false">Add Expense</a> 
+            </div>
+            <div data-role="content">
+                <ul id="notesList" data-role="listview" data-inset="true">
+                    <li data-role="list-divider">Your Expenses</li>
+                    <li id="noNotes">You have no Expense</li>
+                </ul>
+            </div>
+            <div data-role="footer">
+                <h4>&copy; NPU </h4>
+            </div>
+        </div>
+    </body>
+</html>

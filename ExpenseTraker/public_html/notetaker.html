@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Expense-taking Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="jquery.mobile-1.4.2.min.css" />
+        <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="jquery.mobile-1.4.2.min.js"></script>
+        <script src="application.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="homepage">
+            <div data-role="header">
+                <h1>Expense-taking App</h1>
+            </div>
+            <div data-role="content">
+                <p>
+                    This is my Expense-taking application.
+                </p>
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#listnotes">List Of Expense</a></li>
+                    <li><a href="#addnotes">Add Expenses</a></li>
+                </ul>
+            </div>
+            <div data-role="footer">
+                <h4>&copy; NPU 2014-2015</h4>
+            </div>
+        </div>
+        <div data-role="page" id="listnotes">
+            <div data-role="header">
+                <a href="#homepage">Home</a>
+                <h1>Expense-taking App</h1>
+                <a href="#addnotes">Add Expenses</a> 
+            </div>
+            <div data-role="content">
+                <ul id="notesList" data-role="listview" data-inset="true">
+                    <li data-role="list-divider">Your Expense</li>
+                    <li id="noNotes">You have no Expenses</li>
+                </ul>
+            </div>
+            <div data-role="footer">
+                <h4>&copy; NPU 2014-2015</h4>
+            </div>
+        </div>
+        <div data-role="page" id="addnotes">
+            <div data-role="header">
+                <a href="#homepage">Home</a>
+                <h1>Expense-taking App</h1>
+                <a href="#listnotes">List of Expenses</a> 
+            </div>
+            <div data-role="content">
+                <form>
+                    <div>
+                        
+                        <label> Categories</label>
+                        <select id="categories">
+                            <option> Food</option>
+                            <option> Transportation</option>
+                            <option> Cloths</option>
+                            <option> Entertainment</option>
+                            <option> Others</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input id="title" type="number" placeholder="Amount" />
+                    </div>
+                    <div>
+                        <textarea id="note" placeholder="The item of description "></textarea>
+                    </div>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <input id="btnReset" type="submit" value="Reset" />
+                        </div>
+                        <div class="ui-block-b">
+                            <input id="btnAddNote" type="button" value="Add Expense" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div data-role="footer">
+                <h4>&copy; NPU </h4>
+            </div>
+        </div>
+    </body>
+</html>
